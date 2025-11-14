@@ -1,7 +1,5 @@
 import { Cliente } from "../model/Cliente";
-
 import { ClienteRepository } from "../repository/ClienteRepository";
-
 import { colors } from "../util/Colors";
 
 export class ClienteController implements ClienteRepository {
