@@ -1,5 +1,4 @@
 import { Cliente } from "../model/Cliente";
-import { Produto } from "../model/Produto";
 
 export interface ClienteRepository {
 
@@ -11,9 +10,7 @@ export interface ClienteRepository {
     deletar(id: number): void;
 
     // Métodos de Cliente
-    comprar(produto: Produto, quantidade: number, pagamento: number ): boolean
-    aplicarDesconto(): void;
-    darPontos(quantidade: number): void;
+    darPontos(id: number,quantidade: number): void;
     transferePontos(idOrigem: number, idDestino: number, quantidade: number): void;
 
 }

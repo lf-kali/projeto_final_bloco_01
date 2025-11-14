@@ -1,5 +1,3 @@
-import { Produto } from "./Produto";
-
 export class Cliente {
     private _id: number;
     private _nome: string;
@@ -66,11 +64,6 @@ export class Cliente {
         this._pontos = pontos;
     }
 
-    // Métodos de cliente
-    public comprar(produto: Produto,quantidade: number, pagamento: number): boolean {
-        console.log("vazio")
-        return false
-    }
     
     public aplicarDesconto(): boolean{
         console.log("vazio");
