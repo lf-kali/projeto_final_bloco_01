@@ -41,38 +41,47 @@ export function main() {
             case 1:
                 console.log("\n\nCadastrar Cliente\n\n");
 
+                keyPress();
                 break;
             case 2:
                 console.log("\n\nListar Clientes\n\n");
 
+                keyPress();
                 break;
             case 3:
                 console.log("\n\nConsultar dados do cliente - por id\n\n");
 
+                keyPress();
                 break;
             case 4:
                 console.log("\n\nAtualizar dados de Cliente\n\n");
 
+                keyPress();
                 break;
             case 5:
                 console.log("\n\nApagar Cliente\n\n");
 
+                keyPress();
                 break;
             case 6:
                 console.log("\n\nIniciar Venda\n\n");
 
+                keyPress();
                 break;
             case 7:
                 console.log("\n\nDar pontos\n\n");
 
+                keyPress();
                 break;
             case 8:
                 console.log("\n\nTransferência de pontos\n\n");
 
+                keyPress();
                 break;
             default:
                 console.log("\nOpção Inválida!\n");
 
+                keyPress();
                 break;
         }
     }
