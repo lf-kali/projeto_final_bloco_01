@@ -33,7 +33,7 @@ export function main() {
         if (opcao === 9){
             console.log(colors.fg.greenstrong,
                 "\nANTONIOFAGUNDE Informática - O rei do hardware!");
-            // sobre();
+            sobre();
             console.log(colors.reset, "");
             break;
         }
@@ -92,3 +92,5 @@ function keyPress(): void {
     console.log("\nPressione enter para continuar...");
     readline.prompt();
 }
+
+main()
