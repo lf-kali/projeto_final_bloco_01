@@ -15,7 +15,6 @@ export function main() {
 
     let cl2: Cliente = new Cliente(clientes.gerarID(), "Ciclano", "ciclano@ciclano.com", 48976543210, 19203645930, 748);
     clientes.cadastrar(cl2);
-
     clientes.listarTodos()
 
     while(true){
