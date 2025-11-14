@@ -32,7 +32,6 @@ export function main() {
         console.log("       3 - Buscar Cliente por id                ");
         console.log("       4 - Atualizar dados de Cliente           ");
         console.log("       5 - Apagar Cliente                       ");
-        // console.log("       6 - Iniciar venda                        ");
         console.log("       6 - Dar pontos                           ");
         console.log("       7 - Transferir pontos entre Clientes     ");
         console.log("       8 - Sair                                 ");
@@ -136,11 +135,6 @@ export function main() {
 
                 keyPress();
                 break;
-            // case 6:
-            //     console.log("\n\nIniciar Venda\n\n");
-
-            //     keyPress();
-            //     break;
             case 6:
                 console.log("\n\nDar pontos\n\n");
 
