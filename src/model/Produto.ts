@@ -5,15 +5,13 @@ export class Produto {
     private _categoria: string;
     private _preco: number;
     private _estoque: number;
-    private _descricao: string;
 
-    constructor(id: number, nome:string, categoria:string, preco: number, estoque: number, descricao: string){
+    constructor(id: number, nome:string, categoria:string, preco: number, estoque: number){
         this._id = id;
         this._nome = nome;
         this._categoria = categoria;
         this._preco = preco;
         this._estoque = estoque;
-        this._descricao = descricao;
     }
 
     
@@ -31,7 +29,7 @@ export class Produto {
     }
     
     public set nome(nome : string) {
-        this._nome = nome;
+        this._nome = nome.toUpperCase();
     }
     
     public get categoria() : string {
@@ -50,6 +48,13 @@ export class Produto {
         this._preco = preco;
     }
     
+    public get estoque() {
+        return this._estoque
+    }
+
+    public set estoque(estoque: number){
+        this._estoque = estoque;
+    }
     
     // Métodos de produto
     public vender(quantidade: number): void {
@@ -61,7 +66,15 @@ export class Produto {
     }
     
     public visualizar(): void {
-        console.log("vazio");
+
+        console.log("\n*****************************************");
+        console.log(`Dados do produto: ${this._nome}`);
+        console.log("*****************************************");
+        console.log(`Id do produto: ${this._id}`);
+        console.log(`Agência: ${this._categoria}`);
+        console.log(`Preço: ${this._preco}`);
+        console.log(`Estoque: ${this._estoque}`);
+        console.log("\n*****************************************\n");
     }
     
     

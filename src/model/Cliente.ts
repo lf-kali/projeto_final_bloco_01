@@ -1,4 +1,6 @@
-export abstract class Cliente {
+import { Produto } from "./Produto";
+
+export class Cliente {
     private _id: number;
     private _nome: string;
     private _email: string;
@@ -65,6 +67,11 @@ export abstract class Cliente {
     }
 
     // Métodos de cliente
+    public comprar(produto: Produto,quantidade: number, pagamento: number): boolean {
+        console.log("vazio")
+        return false
+    }
+    
     public aplicarDesconto(): boolean{
         console.log("vazio");
         return false;
@@ -72,6 +79,18 @@ export abstract class Cliente {
 
     public darPontos(quantidade: number): void{
         console.log("vazio")
+    }
+
+    public visualizar(): void {
+        console.log("\n*****************************************");
+        console.log("Dados do Cliente:");
+        console.log("*****************************************");
+        console.log(`ID: ${this._id}`);
+        console.log(`Nome: ${this._nome}`);
+        console.log(`E-mail: ${this._email}`);
+        console.log(`Telefone: ${this._telefone}`);
+        console.log(`CPF: ${this._cpf}`);
+        console.log(`Pontos: ${this._pontos}`)
     }
 
 }
